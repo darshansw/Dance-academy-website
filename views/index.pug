@@ -1,0 +1,66 @@
+doctype html
+html 
+    head 
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar
+            ul
+                div#logo
+                    img(src="../static/images/logo.png")
+                li #[a(href="/") Home]
+                li #[a(href="/") About]         
+                li #[a(href="/") Services]            
+                li #[a(href="/") Class Schedule]
+                li #[a(href="/") Contact Us]     
+
+        section#introSection
+            div.big Welcome to Nritya Dance Academy
+            div.small EAT DANCE SLEEP REPEAT 
+
+        section#missionSection
+            h2 Our Programs
+            div.card
+                h3 One Year Dance Program
+                div.card-box 
+                    div.card-img
+                        img(src="./static/images/m1.jpg")
+                    div.card-content
+                        p   This program is a full time course for one year that helps potential dancers nurture
+                                |their skills in a professional environment. Our teachers
+                                |monitors their progress through the year. Our mission is
+                                |to help them make their passion a profession.
+
+            div.card
+                h3 Corporate Workshops
+                div.card-box
+                    div.card-img
+                        img(src="./static/images/m2.jpg")
+                    div.card-content
+                        p  Easing hectic work schedules and professional stress, we spreads the joy of
+                           | dance to working professionals at their corporate space! These customized dance
+                           | activities that help them de stress, improve
+                           | team work and motivate employees.
+
+            div.card
+                h3 Summer Dance Program
+                div.card-box
+                    div.card-img
+                        img(src="../static/images/m3.jpg")
+                    div.card-content
+                        p  We have short term programs that give dance enthusiasts an opportunity to
+                            |learn various dance styles. Our senior faculty and international guest teachers
+                            |introduce students to Modern, Ballet, Hip Hop,
+                            |Salsa, Ballroom, Bollywood Jazz workshops.
+        section#sponsorSection 
+             h2 Our Sponsors
+             .sponsors 
+                img(src="./static/images/sponsor1.png")
+                img(src="./static/images/sponsor2.png")
+                img(src="./static/images/sponsor3.png")
+                img(src="./static/images/sponsor4.png")
+
+        footer#footer 
+            | Copyright &copy; 2022 Dance Academy
+        script 
+            include ../static/index.js
